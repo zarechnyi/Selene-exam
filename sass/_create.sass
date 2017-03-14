@@ -1,0 +1,70 @@
+.create
+  width: 100%
+  height: 300px
+  margin-bottom: 100px
+  display: flex
+  justify-content: space-around
+  align-items: center
+  &__descr
+    font-family: 'Raleway', sans-serif
+    color: $mainColor2
+    width: 40%
+    margin: 20px 0 0 130px
+    h1
+      font-size: 60px
+      margin-bottom: 30px
+    p
+      font-family: 'Montserrat', sans-serif
+      font-size: 14px
+      line-height: 40px
+  &__main_block
+    width: 50%
+    height: 100%
+    display: flex
+    flex-direction: row
+    justify-content: flex-end
+    align-items: center
+    position: relative
+    &__photo
+      width: 100%
+      height: 100%
+      position: absolute
+      &__bcg
+        position: absolute
+        width: 80%
+        height: 100%
+        right: 0
+        bottom: 0
+        z-index: 2
+        background-color: #e5f3fd
+      &__img
+        position: absolute
+        width: 70%
+        height: 120%
+        right: 0
+        bottom: 0
+        z-index: 3
+        background-image: url(../img/main_block_photo.png)
+        background-position: right
+        background-size: contain
+        background-repeat: no-repeat
+      &__border
+        position: absolute
+        width: 76%
+        height: 93%
+        right: 0
+        bottom: 0
+        z-index: 5
+        border: 15px solid transparent
+        border-color: #97d1eb
+    &__text
+      position: absolute
+      top: 50px
+      left: 40px
+      width: 400px
+      z-index: 6
+      h1
+        font-family: 'Montserrat', sans-serif
+        color: #000
+        font-size: 65px
+        font-weight: bold

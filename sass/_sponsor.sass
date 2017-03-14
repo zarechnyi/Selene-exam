@@ -1,0 +1,26 @@
+@mixin logo($backgroundlogo)
+  background-image: $backgroundlogo
+  background-size: contain
+  background-repeat: no-repeat
+  width: 12.5%
+  height: 70%
+
+.sponsor
+  width: 100%
+  height: 150px
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  align-items: center
+  &__logo1
+    @include logo(url(../img/sponsor_logo1.jpg))
+  &__logo2
+    @include logo(url(../img/sponsor_logo2.jpg))
+  &__logo3
+    @include logo(url(../img/sponsor_logo3.jpg))
+  &__logo4
+    @include logo(url(../img/sponsor_logo4.jpg))
+  &__logo5
+    @include logo(url(../img/sponsor_logo5.jpg))
+  &__logo6
+    @include logo(url(../img/sponsor_logo6.jpg))

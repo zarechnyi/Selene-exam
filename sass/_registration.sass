@@ -1,0 +1,90 @@
+.registration
+  width: 100%
+  height: 600px
+  margin: 0
+  padding: 0
+  &__main
+    height: 95%
+    margin: 20px 250px
+    background-image: url(../img/reg_photo.jpg)
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: right
+    padding: 20px
+    border: 15px solid transparent
+    border-color: #97d1eb
+    &__content
+      width: 100%
+      height: 100%
+      margin-top: 50px
+      position: relative
+      z-index: 1
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      align-items: flex-start
+      &__nav
+        margin-bottom: 50px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        a
+          display: block
+          letter-spacing: 3px
+          text-decoration: none
+          font-family: 'Montserrat', sans-serif
+          margin: 0 20px 0 0
+          font-size: 10px
+          font-weight: bold
+          color: #bcc0cd
+          &:hover
+            color: $mainColor
+            text-decoration: underline
+      &__form
+        width: 400px
+        &__button
+          margin: 20px 0
+          text-align: center
+          font-family: 'Montserrat', sans-serif
+          font-size: 18px
+          a
+            text-decoration: none
+            letter-spacing: 2px
+            color: $mainColor2
+            &:hover
+              color: $mainColor
+              text-decoration: underline
+.action_form
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: center
+  font-family: 'Raleway', sans-serif
+  font-size: 36px
+  padding: 0
+  position: relative
+  &__input
+    position: relative
+    label
+      position: absolute
+      top: 35px
+      left: 0
+      color: transparent
+      z-index: -1
+    input
+      border: none
+      border-bottom: 1px solid #e6e7ec
+      outline: none
+      margin: 30px 0
+      background-color: transparent
+      &:focus + label
+        top: 0
+        color: #a9a9a9
+        transform: translateY(-15px)
+        font-size: 30px
+        transition: .2s
+    textarea
+      padding: 0
+      margin: 0
+      border: none
+      border-bottom: 1px solid #e6e7ec
